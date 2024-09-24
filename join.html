@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Now</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background: linear-gradient(135deg, #7848c4, #4a8dff);
+            padding: 2em 0;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            display: block;
+            margin: 0 auto;
+            max-width: 200px;
+            height: auto;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5em;
+            margin-top: 1em;
+        }
+        .nav-links a {
+            font-weight: 700;
+            font-size: 1em;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: #ffcd3c;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 1.5em;
+            font-size: 2.5em;
+            color: #333;
+        }
+        form {
+            max-width: 600px;
+            margin: 2em auto;
+            background: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        form div {
+            margin-bottom: 1.5em;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 0.75em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s ease;
+        }
+        input:focus {
+            border-color: #4a8dff;
+            outline: none;
+        }
+        button {
+            background-color: #4a8dff;
+            color: white;
+            padding: 0.75em 1.5em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        button:hover {
+            background-color: #3a76cc;
+            transform: translateY(-2px);
+        }
+        .form-actions {
+            text-align: center;
+        }
+        .form-actions a {
+            display: inline-block;
+            margin-top: 1em;
+            background-color: #4a8dff;
+            color: #fff;
+            padding: 0.75em 1.5em;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .form-actions a:hover {
+            background-color: #3a76cc;
+            transform: translateY(-2px);
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 1em;
+            }
+            form {
+                padding: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="cclogo.png" alt="Cross Connect Logo" class="logo">
+        </a>
+        <nav class="nav-links">
+            <a href="join.html" class="join">Join Today</a>
+            <a href="login.html" class="member">Member Login</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Join Now</h2>
+        <form action="home.html">
+            <div>
+                <label for="name">Church Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-actions">
+                <button type="submit">Join Now!</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross Connect - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background: linear-gradient(135deg, #7848c4, #4a8dff);
+            padding: 1.5em 0;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            display: block;
+            margin: 0 auto;
+            max-width: 200px;
+            height: auto;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5em;
+            margin-top: 1em;
+        }
+        .nav-links a {
+            font-weight: 700;
+            font-size: 1em;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: #ffcd3c;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 1.5em;
+            font-size: 2.5em;
+            color: #333;
+        }
+        .content {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 2em;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .cta-button {
+            display: inline-block;
+            margin-top: 1em;
+            background-color: #4a8dff;
+            color: #fff;
+            padding: 0.75em 1.5em;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .cta-button:hover {
+            background-color: #3a76cc;
+            transform: translateY(-2px);
+        }
+        .info-section {
+            margin-top: 2em;
+        }
+        .info-section h3 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+            color: #333;
+        }
+        .info-section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #666;
+        }
+        /* Announcements section */
+        .announcements {
+            margin-top: 3em;
+            padding: 2em;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .announcement-item {
+            margin-bottom: 1.5em;
+        }
+        .announcement-item h3 {
+            font-size: 1.8em;
+            margin-bottom: 0.5em;
+            color: #4a8dff;
+        }
+        .announcement-item p {
+            line-height: 1.4;
+        }
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 1em;
+            }
+            .content {
+                padding: 1.5em;
+            }
+            .announcements {
+                padding: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#">
+            <img src="cclogo.png" alt="Cross Connect Logo" class="logo">
+        </a>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="about.html">About</a>
+            <a href="connect.html">Connect</a>
+            <a href="profile.html">My Profile</a>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <h2>Welcome to Cross Connect</h2>
+            <p>Here we are dedicated to the unity of Christ's Church and the Commision He has given Her. Through our networking platform, we hope to create an evironment that fosters that unity and offer the support needed to fulfill our roles in spreading the Gospel.</p>
+            <a href="connect.html" class="cta-button">Start Connecting</a>
+        </div>
+        
+        <section class="announcements">
+            <div class="announcement-item">
+                <h3>Upcoming Events</h3>
+                <p>Join us for the annual Christian Leadership Conference on July 15th - 17th. <a href="#">Learn more</a></p>
+            </div>
+            <div class="announcement-item">
+                <h3>Local Church News</h3>
+                <p>New Life Church celebrates its 50th anniversary this Sunday. All are welcome to join the festivities!</p>
+            </div>
+        </section>
+
+        <div class="info-section">
+            <h3>Our Mission</h3>
+            <p>At Cross Connect, we aim to provide churches with the tools and resources they need to stay connected and thrive in today's digital age. Whether you're looking to join a community, find resources, or connect with other churches, we're here to help.</p>
+        </div>
+    </main>
+</body>
+</html>

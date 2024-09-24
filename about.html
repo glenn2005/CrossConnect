@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Cross Connect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(135deg, #7848c4, #4a8dff);
+            padding: 1.5em 0;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header img {
+            max-width: 200px;
+            margin: 0 auto;
+            display: block;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5em;
+            margin-top: 1em;
+        }
+        .nav-links a {
+            font-weight: 700;
+            font-size: 1em;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: #ffcd3c;
+        }
+        main {
+            padding: 2em;
+            background-color: #fff;
+            max-width: 800px;
+            margin: 2em auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2, h3 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            text-align: center;
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.6;
+        }
+        .mission, .team, .history, .values, .contact {
+            margin: 2em 0;
+        }
+        .mission, .history, .values {
+            background-color: #f9f9f9;
+            padding: 2em;
+            border-radius: 8px;
+        }
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .team-member {
+            background-color: #f9f9f9;
+            margin: 1em;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 200px;
+        }
+        .team-member img {
+            width: 100px;
+            border-radius: 50%;
+            margin-bottom: 1em;
+        }
+        .team-member h3 {
+            margin: 0.5em 0;
+        }
+        .team-member p {
+            font-size: 0.9em;
+            color: #777;
+        }
+        .a-text {
+            color: #4a8dff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .a-text:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 1em;
+            }
+            main {
+                padding: 1.5em;
+            }
+            .team-member {
+                width: 100%;
+                margin: 1em 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="home.html">
+            <img src="cclogo.png" alt="Cross Connect Logo" class="logo">
+        </a>
+        <nav class="nav-links">
+            <a href="homepage.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="connect.html">Connect</a>
+            <a href="profile.html">My Profile</a>
+        </nav>
+    </header>
+    <main>
+        <h1>About Us</h1>
+        <section class="intro">
+            <p>Welcome to Cross Connect, your hub for strengthening connections within the Christian Church community.</p>
+        </section>
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>Our mission is to enhance communication, foster collaboration, and build stronger relationships within the Christian Church community through innovative technology and compassionate service.</p>
+        </section>
+        <section class="history">
+            <h2>Our History</h2>
+            <p>Founded in 2023, Cross Connect started with a vision to bring churches closer together in a digital age. Since then, we have grown into a vibrant community dedicated to supporting and connecting churches across the globe.</p>
+        </section>
+        <section class="values">
+            <h2>Our Values</h2>
+            <p>We believe in the power of community, the importance of collaboration, and the impact of compassionate service. Our core values drive everything we do and guide our mission to support the Christian Church community.</p>
+        </section>
+        <h2>Meet Our Team</h2>
+        <section class="team">
+            <div class="team-member">
+                <img src="glennjr.png" alt="Glenn Ivory">
+                <h3>Glenn Ivory</h3>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="path/to/glenn-ivory-sr.jpg" alt="Glenn Ivory Sr.">
+                <h3>Glenn Ivory Sr.</h3>
+                <p>Co-Founder & CFO</p>
+            </div>
+            <div class="team-member">
+                <img src="sam.png" alt="Samuel Woolford">
+                <h3>Samuel Woolford</h3>
+                <p>Data Analyst & Secretary</p>
+            </div>
+        </section>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to learn more about Cross Connect, please <a href="connect.html" class="a-text">Connect</a> with us.</p>
+        </section>
+    </main>
+</body>
+</html>

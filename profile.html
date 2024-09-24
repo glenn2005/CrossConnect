@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - Cross Connect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(135deg, #7848c4, #4a8dff);
+            padding: 1.5em 0;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header img {
+            max-width: 200px;
+            margin: 0 auto;
+            display: block;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5em;
+            margin-top: 1em;
+        }
+        .nav-links a {
+            font-weight: 700;
+            font-size: 1em;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: #ffcd3c;
+        }
+        .main {
+            padding: 2em;
+            max-width: 800px;
+            margin: 2em auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .profile-header {
+            text-align: center;
+            margin-bottom: 1.5em;
+        }
+        .profile-header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1em;
+        }
+        .profile-header h2 {
+            margin: 0.5em 0;
+            color: #333;
+        }
+        .profile-header p {
+            color: #555;
+            font-size: 1.1em;
+        }
+        .section {
+            margin-bottom: 2em;
+        }
+        .section h3 {
+            font-size: 1.8em;
+            margin-bottom: 0.5em;
+            color: #333;
+        }
+        .section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #666;
+        }
+        .contact-info {
+            font-size: 1.2em;
+            color: #333;
+        }
+        .contact-info a {
+            color: #4a8dff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .contact-info a:hover {
+            color: #3a76cc;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 1em;
+            }
+            .main {
+                padding: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="home.html">
+            <img src="cclogo.png" alt="Cross Connect Logo" class="logo">
+        </a>
+        <nav class="nav-links">
+            <a href="homepage.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="connect.html">Connect</a>
+            <a href="#">My Profile</a>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="profile-header">
+            <h2>Solid Rock C.O.G.I.C</h2>
+            <p>Location: Newark, CA</p>
+            <p>Denomination: Church of God In Christ</p>
+            <p>We are a community-focused church dedicated to spreading love and compassion through our various ministries and outreach programs.</p>
+        </div>
+        <div class="section">
+            <h3>How We Need Help</h3>
+            <p>We are looking for volunteers to assist with our youth programs, donations for our food pantry, and skilled individuals to help with building maintenance.</p>
+        </div>
+        <div class="section">
+            <h3>How We Can Help</h3>
+            <p>We can offer support through our counseling services, community outreach programs, and by sharing our resources and facilities with other churches in need.</p>
+        </div>
+        <div class="section">
+            <h3>Contact Information</h3>
+            <p class="contact-info">Email: <a href="mailto:solidrock@gmail.com">solidrock@gmail.com</a></p>
+            <p class="contact-info">Phone: (555) 123-4567</p>
+            <p class="contact-info">Website: <a href="https://solidrockcogic.org" target="_blank">https://solidrockcogic.org</a></p>
+        </div>
+    </main>
+</body>
+</html>

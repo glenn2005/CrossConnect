@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect - Cross Connect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(135deg, #7848c4, #4a8dff);
+            padding: 1.5em 0;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header img {
+            max-width: 200px;
+            margin: 0 auto;
+            display: block;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5em;
+            margin-top: 1em;
+        }
+        .nav-links a {
+            font-weight: 700;
+            font-size: 1em;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: #ffcd3c;
+        }
+        .main {
+            padding: 2em;
+            max-width: 1200px;
+            margin: 2em auto;
+        }
+        .profile-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2em;
+            overflow: hidden;
+        }
+        .profile-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .profile-card .content {
+            padding: 1em 2em;
+        }
+        .profile-card h3 {
+            margin: 0.5em 0;
+            color: #333;
+        }
+        .profile-card p {
+            margin: 0.5em 0;
+            color: #555;
+        }
+        .profile-card .actions {
+            display: flex;
+            justify-content: space-between;
+            padding: 1em 2em;
+            background: #f9f9f9;
+            border-top: 1px solid #ddd;
+        }
+        .profile-card .actions a {
+            color: #4a8dff;
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s ease;
+        }
+        .profile-card .actions a:hover {
+            color: #3a76cc;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 1em;
+            }
+            .profile-card {
+                margin-bottom: 1.5em;
+            }
+            .profile-card .content {
+                padding: 1em;
+            }
+            .profile-card .actions {
+                padding: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="home.html">
+            <img src="cclogo.png" alt="Cross Connect Logo" class="logo">
+        </a>
+        <nav class="nav-links">
+            <a href="homepage.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#">Connect</a>
+            <a href="profile.html">My Profile</a>
+        </nav>
+    </header>
+    <main class="main">
+        <h1>Connect with Churches in Your Area</h1>
+        <div class="profile-card">
+            
+            <div class="content">
+                <h3>First Baptist Church</h3>
+                <p><strong>Activities:</strong> Youth group, Bible study, community outreach</p>
+                <p><strong>Events:</strong> Sunday service, charity drive, holiday festival</p>
+                <p><strong>Services:</strong> Counseling, food pantry, prayer meetings</p>
+                <p><strong>Help Needed:</strong> Volunteer recruitment, event planning</p>
+                <p><strong>Where we can assist:</strong> Donation drives, community support</p>
+            </div>
+            <div class="actions">
+                <a href="#">View Profile</a>
+                <a href="#">Connect</a>
+            </div>
+        </div>
+        <div class="profile-card">
+            
+            <div class="content">
+                <h3>Grace Community Church</h3>
+                <p><strong>Activities:</strong> Worship team, children's ministry, sports league</p>
+                <p><strong>Events:</strong> Sunday service, vacation Bible school, food fair</p>
+                <p><strong>Services:</strong> Marriage counseling, youth mentoring, crisis support</p>
+                <p><strong>Help Needed:</strong> Music ministry, outreach programs</p>
+                <p><strong>Where we can assist:</strong> Facility use, transportation services</p>
+            </div>
+            <div class="actions">
+                <a href="#">View Profile</a>
+                <a href="#">Connect</a>
+            </div>
+        </div>
+        <!-- More profile cards can be added in a similar manner -->
+    </main>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross Connect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background: linear-gradient(135deg, #7848c4, #4a8dff);
+            padding: 2em 0;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            display: block;
+            margin: 0 auto;
+            max-width: 30%;
+            height: auto;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5em;
+            margin-top: 1em;
+        }
+        .nav-links a {
+            font-weight: 700;
+            font-size: 1em;
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+        .nav-links a.join {
+            background-color: #ffcd3c;
+            color: #333;
+        }
+        .nav-links a.join:hover {
+            background-color: #e6b800;
+        }
+        .nav-links a.member:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        h1 {
+            margin-top: 1em;
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 1em auto;
+            padding: 1.5em;
+            max-width: 70%;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .cta-button {
+            display: inline-block;
+            margin: 1em auto;
+            padding: 1em 2em;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #4a8dff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #3a76cc;
+            transform: scale(1.05);
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 2em;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .image-container img {
+            width: 30%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .image-container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .testimonials {
+            background-color: #f9f9f9;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial {
+            text-align: center;
+            padding: 1em;
+        }
+        .testimonial p {
+            font-size: 1.1em;
+            color: #666;
+        }
+        .testimonial .author {
+            font-size: 1em;
+            color: #333;
+            font-weight: 700;
+        }
+        @media (max-width: 768px) {
+            .image-container img {
+                width: 100%;
+            }
+            .nav-links {
+                flex-direction: column;
+                gap: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="cclogo.png" alt="Cross Connect Logo" class="logo">
+        </a>
+        <nav class="nav-links">
+            <a href="join.html" class="join">Join Today</a>
+            <a href="login.html" class="member">Member Login</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Mission:</h1>
+            <p>Through our networking platform, Cross Connect empowers the Christian Church by enhancing communication, fostering collaboration, strengthening connections, and offering access to technological assistance.</p>
+            <a href="join.html" class="cta-button">Get Started Now</a>
+        </section>
+        <section class="image-container">
+            <img src="Enhancing Communication.png" alt="Enhancing Communication">
+            <img src="Fostering.png" alt="Fostering Collaboration">
+            <img src="strengthening.png" alt="Strengthening Connections">
+        </section>
+        <section class="testimonials">
+            <h2>What Our Members Say</h2>
+            <div class="testimonial">
+                <p>"Cross Connect has revolutionized how we connect with other churches and manage our community outreach programs."</p>
+                <p class="author">- Pastor Jerald Simpkins</p>
+            </div>
+            <div class="testimonial">
+                <p>"The platform is user-friendly and has significantly improved our communication within the church network."</p>
+                <p class="author">- Barbara Smothers, Church Administrator</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
